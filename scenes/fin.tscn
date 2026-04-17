@@ -1,0 +1,86 @@
+[gd_scene format=3 uid="uid://d33vx2afrh4iu"]
+
+[ext_resource type="Texture2D" uid="uid://bfe8jrwmdqjdq" path="res://assets/images/DramaticSkys-TexturePack7-1000x563.png" id="1_08607"]
+[ext_resource type="Theme" uid="uid://d2t3nyhp8eayd" path="res://assets/theme.tres" id="2_24yaq"]
+[ext_resource type="Texture2D" uid="uid://bt14gw2npwth7" path="res://assets/images/mobs/007.png" id="3_lxfsg"]
+
+[node name="Fin" type="Node2D" unique_id=731069481]
+
+[node name="Fondo" type="Sprite2D" parent="." unique_id=1326537958]
+position = Vector2(575.92535, 323.25)
+scale = Vector2(1.1678507, 1.1678509)
+texture = ExtResource("1_08607")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1137235613]
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer" unique_id=1456548940]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -185.0
+offset_top = -239.5
+offset_right = 185.0
+offset_bottom = 239.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/PanelContainer" unique_id=183556712]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/PanelContainer/MarginContainer" unique_id=2066946763]
+layout_mode = 2
+
+[node name="titulo" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1562330913]
+layout_mode = 2
+theme = ExtResource("2_24yaq")
+theme_type_variation = &"HeaderMedium"
+text = "Tu mob es:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="titulo2" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=2118116060]
+layout_mode = 2
+theme = ExtResource("2_24yaq")
+theme_type_variation = &"HeaderMedium"
+text = "Araña"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="mob" type="TextureRect" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1815836770]
+custom_minimum_size = Vector2(0, 250)
+layout_mode = 2
+texture = ExtResource("3_lxfsg")
+expand_mode = 3
+
+[node name="Control" type="Control" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1001423764]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1119511225]
+layout_mode = 2
+
+[node name="Si" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1385762894]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme = ExtResource("2_24yaq")
+theme_type_variation = &"FlatButton"
+text = "Sí
+"
+
+[node name="No" type="Button" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1624177640]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme = ExtResource("2_24yaq")
+theme_type_variation = &"FlatButton"
+text = "No
+
+"

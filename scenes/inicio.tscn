@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://co0cex2ilj11y"]
+
+[ext_resource type="Texture2D" uid="uid://bfe8jrwmdqjdq" path="res://assets/images/DramaticSkys-TexturePack7-1000x563.png" id="1_4vxdk"]
+[ext_resource type="Script" uid="uid://dhy4q170mknyj" path="res://scripts/inicio.gd" id="1_q3pj3"]
+[ext_resource type="Theme" uid="uid://d2t3nyhp8eayd" path="res://assets/theme.tres" id="2_4vxdk"]
+
+[node name="Inicio" type="Node2D" unique_id=1309475061]
+script = ExtResource("1_q3pj3")
+
+[node name="Fondo" type="Sprite2D" parent="." unique_id=122888029]
+position = Vector2(575.92535, 323.25)
+scale = Vector2(1.1678507, 1.1678509)
+texture = ExtResource("1_4vxdk")
+
+[node name="Titulo" type="Label" parent="." unique_id=681183727]
+offset_left = 240.0
+offset_top = 96.0
+offset_right = 928.0
+offset_bottom = 222.0
+theme = ExtResource("2_4vxdk")
+theme_type_variation = &"HeaderLarge"
+text = "Minekinator"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Control" type="Control" parent="." unique_id=168724954]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1156.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 8
+
+[node name="Button" type="Button" parent="Control" unique_id=287227160]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -69.5
+offset_top = -26.5
+offset_right = 69.5
+offset_bottom = 26.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_4vxdk")
+text = "Jugar"
+icon_alignment = 1
+
+[connection signal="pressed" from="Control/Button" to="." method="_on_button_pressed"]

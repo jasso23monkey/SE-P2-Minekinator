@@ -1,0 +1,41 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Akinator Minecraft"
+run/main_scene="uid://co0cex2ilj11y"
+config/features=PackedStringArray("4.6", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "red",
+"res://assets/fonts/": "purple",
+"res://assets/images/": "yellow",
+"res://assets/json/": "orange",
+"res://scenes/": "teal",
+"res://scripts/": "blue"
+}
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"

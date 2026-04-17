@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://j1svrgqqn8t1"]
+
+[ext_resource type="Script" uid="uid://bt74mhgxowugr" path="res://scripts/principal.gd" id="1_41r3f"]
+[ext_resource type="Texture2D" uid="uid://ccltfmgjncmfr" path="res://assets/images/wall.jpg" id="2_limju"]
+[ext_resource type="Theme" uid="uid://d2t3nyhp8eayd" path="res://assets/theme.tres" id="3_kgnyf"]
+[ext_resource type="Texture2D" uid="uid://be3fwo6ise4ph" path="res://assets/images/mobs/001.png" id="4_ckosc"]
+[ext_resource type="Texture2D" uid="uid://cvliigjhioogr" path="res://assets/images/sus.webp" id="4_j5742"]
+[ext_resource type="Texture2D" uid="uid://dpyevgxeapfe6" path="res://assets/images/mobs/002.png" id="5_awm7n"]
+[ext_resource type="Texture2D" uid="uid://hlhk45x355rt" path="res://assets/images/mobs/003.png" id="6_ucw2e"]
+[ext_resource type="Texture2D" uid="uid://dqe0y7vhvujkn" path="res://assets/images/mobs/004.png" id="7_t8783"]
+[ext_resource type="Texture2D" uid="uid://c2ynd4nra1m24" path="res://assets/images/mobs/005.png" id="8_fj78b"]
+
+[node name="Principal" type="Node2D" unique_id=464812936]
+script = ExtResource("1_41r3f")
+
+[node name="fondo" type="Sprite2D" parent="." unique_id=1915302443]
+position = Vector2(575.50006, 354.50003)
+scale = Vector2(0.9085938, 0.90125006)
+texture = ExtResource("2_limju")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=886693543]
+
+[node name="Panel Preguntas" type="PanelContainer" parent="CanvasLayer" unique_id=1997235455]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -809.0
+offset_top = 134.0
+offset_right = -30.0
+offset_bottom = -133.0
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Panel Preguntas" unique_id=150173417]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Panel Preguntas/MarginContainer" unique_id=249575171]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Numero" type="Label" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer" unique_id=33334719]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_kgnyf")
+theme_type_variation = &"HeaderSmall"
+text = "Pregunta 1"
+
+[node name="Pregunta" type="Label" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer" unique_id=618054370]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("3_kgnyf")
+theme_type_variation = &"HeaderMedium"
+text = "¿Tu mob es del Overwolrd?"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer" unique_id=1424270293]
+layout_mode = 2
+
+[node name="SI" type="Button" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer/HBoxContainer" unique_id=620732368]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme = ExtResource("3_kgnyf")
+theme_type_variation = &"FlatButton"
+text = "Sí
+"
+
+[node name="NO" type="Button" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1678585343]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme = ExtResource("3_kgnyf")
+theme_type_variation = &"FlatButton"
+text = "No
+"
+
+[node name="NOSE" type="Button" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1699953648]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme = ExtResource("3_kgnyf")
+theme_type_variation = &"FlatButton"
+text = "No sé
+"
+
+[node name="Control" type="Control" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer" unique_id=921837958]
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer" unique_id=834619276]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+
+[node name="izq" type="Button" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1107470776]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme = ExtResource("3_kgnyf")
+theme_type_variation = &"FlatButton"
+text = "<
+"
+
+[node name="M1" type="TextureRect" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=912027699]
+layout_mode = 2
+texture = ExtResource("4_ckosc")
+expand_mode = 3
+
+[node name="M2" type="TextureRect" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1627202531]
+layout_mode = 2
+texture = ExtResource("5_awm7n")
+expand_mode = 3
+
+[node name="M3" type="TextureRect" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1485538774]
+layout_mode = 2
+texture = ExtResource("6_ucw2e")
+expand_mode = 3
+
+[node name="M4" type="TextureRect" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=2102257192]
+layout_mode = 2
+texture = ExtResource("7_t8783")
+expand_mode = 3
+
+[node name="M5" type="TextureRect" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1349041173]
+layout_mode = 2
+texture = ExtResource("8_fj78b")
+expand_mode = 3
+
+[node name="der" type="Button" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1809670251]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 4
+theme = ExtResource("3_kgnyf")
+theme_type_variation = &"FlatButton"
+text = ">
+"
+
+[node name="Sus" type="Sprite2D" parent="." unique_id=1449978496]
+position = Vector2(176, 342.00003)
+scale = Vector2(1.1429425, 1.1429427)
+texture = ExtResource("4_j5742")

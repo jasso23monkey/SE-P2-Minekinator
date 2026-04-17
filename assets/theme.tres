@@ -1,0 +1,27 @@
+[gd_resource type="Theme" format=3 uid="uid://d2t3nyhp8eayd"]
+
+[ext_resource type="FontFile" uid="uid://dfi3hkf2vmni6" path="res://assets/fonts/minecraft_fot_esp.ttf" id="1_5x3i2"]
+
+[resource]
+default_font = ExtResource("1_5x3i2")
+Button/colors/font_disabled_color = Color(0.9358525, 4.168123e-05, 0.6851841, 0.5019608)
+Button/colors/font_focus_color = Color(1, 0, 0, 1)
+Button/font_sizes/font_size = 50
+FlatButton/colors/font_color = Color(1, 1, 1, 1)
+FlatButton/font_sizes/font_size = 35
+FlatButton/fonts/font = ExtResource("1_5x3i2")
+HeaderLarge/colors/font_color = Color(1, 1, 1, 1)
+HeaderLarge/colors/font_outline_color = Color(0, 0, 0, 1)
+HeaderLarge/constants/line_spacing = 0
+HeaderLarge/constants/outline_size = 50
+HeaderLarge/font_sizes/font_size = 100
+HeaderMedium/colors/font_color = Color(1, 1, 1, 1)
+HeaderMedium/colors/font_outline_color = Color(0, 0, 0, 1)
+HeaderMedium/constants/outline_size = 20
+HeaderMedium/font_sizes/font_size = 45
+HeaderMedium/fonts/font = ExtResource("1_5x3i2")
+HeaderSmall/colors/font_color = Color(0.99215686, 0.99215686, 0.96862745, 0.9647059)
+HeaderSmall/colors/font_outline_color = Color(0, 0, 0, 1)
+HeaderSmall/constants/outline_size = 12
+HeaderSmall/font_sizes/font_size = 28
+HeaderSmall/fonts/font = ExtResource("1_5x3i2")
