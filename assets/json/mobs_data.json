@@ -7,7 +7,7 @@
 	  "dimension": "overworld",
 	  "vuela": true,
 	  "clasificacion": "artropodo",
-	  "muere_tras_atacar": true,
+	  "da_veneno": true,
 	  "produce_miel": true
 	}
   },
@@ -28,7 +28,7 @@
 	"reglas": {
 	  "tipo": "pasivo",
 	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
+	  "habitat": "acuatico",
 	  "anfibio": true,
 	  "depredador_de_peces": true,
 	  "se_transporta_en_cubeta": true
@@ -53,6 +53,7 @@
 	  "dimension": "overworld",
 	  "clasificacion": "muerto_viviente",
 	  "se_puede_curar": true,
+	  "se_quema_con_el_sol": true,
 	  "apariencia_humanoide": true
 	}
   },
@@ -64,7 +65,8 @@
 	  "dimension": "overworld",
 	  "vuela": true,
 	  "clasificacion": "espiritu",
-	  "recolecta_items": true
+	  "recolecta_items": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -88,7 +90,8 @@
 	  "clasificacion": "artropodo",
 	  "escala_paredes": true,
 	  "tamaño": "pequeño",
-	  "da_veneno": true
+	  "da_veneno": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -122,7 +125,8 @@
 	  "vuela": true,
 	  "clasificacion": "elemental",
 	  "lanza_proyectiles": true,
-	  "suelta_varas_fuego": true
+	  "suelta_varas_fuego": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -134,7 +138,8 @@
 	  "vuela": true,
 	  "clasificacion": "elemental",
 	  "habitat": "trial_chambers",
-	  "usa_ataques_viento": true
+	  "usa_ataques_viento": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -406,7 +411,8 @@
 	  "dimension": "nether",
 	  "clasificacion": "muerto_viviente",
 	  "da_efecto_wither": true,
-	  "usa_espada": true
+	  "usa_espada": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -473,7 +479,8 @@
 	  "dimension": "overworld",
 	  "clasificacion": "golem",
 	  "lanza_mobs_por_el_aire": true,
-	  "suelta_amapolas": true
+	  "suelta_amapolas": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -497,7 +504,8 @@
 	  "clasificacion": "acuatico",
 	  "habitat": "monumento_oceanico",
 	  "dispara_laser": true,
-	  "tiene_espinas": true
+	  "tiene_espinas": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -510,7 +518,8 @@
 	  "habitat": "monumento_oceanico",
 	  "dispara_laser": true,
 	  "tiene_espinas":true,
-	  "da_fatiga_minera": true
+	  "da_fatiga_minera": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -752,7 +761,8 @@
 	  "clasificacion": "humanoide",
 	  "usa_hacha": true,
 	  "no_se_distrae_con_oro": true,
-	  "tiene_mucha_vida": true
+	  "tiene_mucha_vida": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -830,7 +840,8 @@
 	  "dimension": "end",
 	  "se_esconde_en_caparazon": true,
 	  "dispara_proyectiles_levitacion": true,
-	  "se_teletransporta": true
+	  "se_teletransporta": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -898,7 +909,8 @@
 	  "dimension": "overworld",
 	  "vuela": true,
 	  "atraviesa_paredes": true,
-	  "invocado_por_evocador": true
+	  "invocado_por_evocador": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -910,7 +922,8 @@
 	  "es_ciego": true,
 	  "detecta_vibraciones": true,
 	  "tiene_mucha_vida": true,
-	  "es_negro": true
+	  "es_negro": true,
+	  "spawn_estructura": true
 	}
   },
   {
@@ -945,6 +958,7 @@
 	  "dimension": "overworld",
 	  "clasificacion": "muerto_viviente",
 	  "se_quema_con_el_sol": true,
+	  "se_puede_curar": false,
 	  "ataca_aldeanos": true
 	}
   },

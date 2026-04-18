@@ -53,12 +53,14 @@ text = "Pregunta 1"
 
 [node name="Pregunta" type="Label" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer" unique_id=618054370]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(750, 0)
+custom_minimum_size = Vector2(750, 25)
 layout_mode = 2
 size_flags_horizontal = 4
 theme = ExtResource("3_kgnyf")
 theme_type_variation = &"HeaderMedium"
 text = "¿Tu mob es del Overwolrd?"
+horizontal_alignment = 1
+vertical_alignment = 1
 autowrap_mode = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Panel Preguntas/MarginContainer/VBoxContainer" unique_id=1424270293]

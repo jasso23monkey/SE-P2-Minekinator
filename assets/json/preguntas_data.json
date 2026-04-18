@@ -1,0 +1,119 @@
+[
+  {
+	"clave": "tipo",
+	"texto": "¿Es una criatura hostil que te ataca al verte?",
+	"nota": "Filtra por tipo: hostil vs pasivo/neutral"
+  },
+  {
+	"clave": "vuela",
+	"texto": "¿Tiene la capacidad de volar o flotar de forma permanente?",
+	"nota": "Filtra mobs aéreos"
+  },
+  {
+	"clave": "dimension",
+	"texto": "¿Habita naturalmente en el Overworld?",
+	"nota": "Separa dimensiones"
+  },
+  {
+	"clave": "clasificacion",
+	"texto": "¿Es considerado un muerto viviente (zombie, esqueleto, etc.)?",
+	"valor_objetivo": "muerto viviente"
+  },
+ {
+	"clave": "clasificación",
+	"texto": "¿Es un artópodo (araña, abeja, silverfish)?",
+	"valor_objetivo": "artropodo"
+  },
+  {
+	"clave": "habitat",
+	"texto": "¿Su hábitat principal es el agua (es una criatura acuática)?",
+	"nota": "Filtra mobs marinos"
+  },
+  {
+	"clave": "es_jefe",
+	"texto": "¿Se trata de un jefe final (Boss) con una barra de vida grande?",
+	"nota": "Identifica Enderdragon o Wither"
+  },
+  {
+	"clave": "se_quema_con_el_sol",
+	"texto": "¿Sufre daño o se quema cuando le da la luz directa del sol?",
+	"nota": "Clave para zombies y esqueletos"
+  },
+  {
+	"clave": "es_montable",
+	"texto": "¿Es una criatura en la que te puedes montar?",
+	"nota": "Filtra caballos, cerdos, camellos"
+  },
+  {
+	"clave": "es_tameable",
+	"texto": "¿Se puede domesticar para que sea tu mascota?",
+	"nota": "Filtra lobos, gatos, loros"
+  },
+  {
+	"clave": "puede_comerciar",
+	"texto": "¿Es posible realizar intercambios o comerciar con este mob?",
+	"nota": "Identifica aldeanos y piglins"
+  },
+  {
+	"clave": "explota",
+	"texto": "¿Tiene la capacidad de explotar cerca del jugador?",
+	"nota": "Identifica al Creeper"
+  },
+  {
+	"clave": "se_teletransporta",
+	"texto": "¿Puede teletransportarse de un lugar a otro?",
+	"nota": "Identifica Enderman o Shulker"
+  },
+  {
+	"clave": "da_veneno",
+	"texto": "¿Sus ataques pueden envenenar al jugador?",
+	"nota": "Identifica arañas de cueva o ciénagos"
+  },
+  {
+	"clave": "lanza_proyectiles",
+	"texto": "¿Ataca a distancia lanzando proyectiles (flechas, fuego, etc.)?",
+	"nota": "Filtra por modo de ataque"
+  },
+  {
+	"clave": "produce_miel",
+	"texto": "¿Es una criatura que produce miel?",
+	"nota": "Específica para la Abeja"
+  },
+  {
+	"clave": "es_ciego",
+	"texto": "¿Es una criatura que no tiene visión y detecta vibraciones?",
+	"nota": "Específica para el Warden"
+  },
+  {
+	"clave": "hecho_por_el_jugador",
+	"texto": "¿Es una criatura que puede ser construida o creada por el jugador?",
+	"nota": "Filtra gólems"
+  },
+  {
+	"clave": "bioma_especifico",
+	"texto": "¿Aparece únicamente en un bioma muy específico (desierto, nieve, jungla)?",
+	"nota": "Filtra variantes geográficas"
+  },
+  {
+	"clave": "tiene_tres_cabezas",
+	"texto": "¿Es una criatura que posee tres cabezas?",
+	"nota": "Específica para el Wither"
+  },
+  {
+	"clave": "atraviesa_paredes",
+	"texto": "¿Tiene la capacidad fantasmal de atravesar bloques sólidos?",
+	"nota": "Específica para el Vex"
+  },
+  {
+	"clave": "se_puede_curar",
+	"texto": "¿Se puede des-zombificar?",
+	"nota": "aldeano zombie"
+  },
+ {
+	"clave": "spawn_estructura",
+	"texto": "¿Su spawn es exclusivo a alguna estructura?",
+	"nota": "aldeano zombie"
+  },
+
+   
+]

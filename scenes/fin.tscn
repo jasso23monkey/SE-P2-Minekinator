@@ -1,10 +1,12 @@
 [gd_scene format=3 uid="uid://d33vx2afrh4iu"]
 
+[ext_resource type="Script" uid="uid://dvl8vrgayjj1e" path="res://scripts/fin.gd" id="1_24yaq"]
 [ext_resource type="Texture2D" uid="uid://bfe8jrwmdqjdq" path="res://assets/images/DramaticSkys-TexturePack7-1000x563.png" id="1_08607"]
 [ext_resource type="Theme" uid="uid://d2t3nyhp8eayd" path="res://assets/theme.tres" id="2_24yaq"]
-[ext_resource type="Texture2D" uid="uid://bt14gw2npwth7" path="res://assets/images/mobs/007.png" id="3_lxfsg"]
+[ext_resource type="Texture2D" uid="uid://cvliigjhioogr" path="res://assets/images/sus.webp" id="4_24yaq"]
 
 [node name="Fin" type="Node2D" unique_id=731069481]
+script = ExtResource("1_24yaq")
 
 [node name="Fondo" type="Sprite2D" parent="." unique_id=1326537958]
 position = Vector2(575.92535, 323.25)
@@ -37,26 +39,28 @@ theme_override_constants/margin_bottom = 25
 layout_mode = 2
 
 [node name="titulo" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1562330913]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(650, 50)
 layout_mode = 2
 theme = ExtResource("2_24yaq")
 theme_type_variation = &"HeaderMedium"
 text = "Tu mob es:"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
 
-[node name="titulo2" type="Label" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=2118116060]
+[node name="Control2" type="Control" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1757570562]
+custom_minimum_size = Vector2(0, 10)
 layout_mode = 2
-theme = ExtResource("2_24yaq")
-theme_type_variation = &"HeaderMedium"
-text = "Araña"
-horizontal_alignment = 1
-vertical_alignment = 1
+size_flags_vertical = 3
 
 [node name="mob" type="TextureRect" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1815836770]
-custom_minimum_size = Vector2(0, 250)
+unique_name_in_owner = true
+custom_minimum_size = Vector2(250, 250)
 layout_mode = 2
-texture = ExtResource("3_lxfsg")
-expand_mode = 3
+texture = ExtResource("4_24yaq")
+expand_mode = 1
+stretch_mode = 5
 
 [node name="Control" type="Control" parent="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer" unique_id=1001423764]
 custom_minimum_size = Vector2(0, 25)
@@ -84,3 +88,6 @@ theme_type_variation = &"FlatButton"
 text = "No
 
 "
+
+[connection signal="pressed" from="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/Si" to="." method="_on_si_pressed"]
+[connection signal="pressed" from="CanvasLayer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer/No" to="." method="_on_no_pressed"]
