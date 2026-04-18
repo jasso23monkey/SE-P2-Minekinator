@@ -205,18 +205,18 @@ func cumple_regla(reglas_mob, clave, valor_usuario) -> bool:
 	if typeof(valor_en_json) == TYPE_BOOL:
 		return valor_en_json == valor_usuario
 		
-	# CASO 2: Strings (tipo, dimension, clasificacion)
-	# Si el usuario dice SÍ, buscamos el valor positivo
-	if valor_usuario:
-		if clave == "tipo": return valor_en_json == "hostil"
-		if clave == "dimension": return valor_en_json == "overworld"
-		if clave == "clasificacion": return valor_en_json == "muerto_viviente"
-		if clave == "habitat": return valor_en_json == "acuatico"
-	else:
-		# Si el usuario dice NO, aceptamos cualquier cosa que NO sea el valor positivo
-		if clave == "tipo": return valor_en_json != "hostil"
-		if clave == "dimension": return valor_en_json != "overworld"
-		if clave == "clasificacion": return valor_en_json != "muerto_viviente"
-		if clave == "habitat": return valor_en_json != "acuatico"
+	## CASO 2: Strings (tipo, dimension, clasificacion)
+	## Si el usuario dice SÍ, buscamos el valor positivo
+	#if valor_usuario:
+		#if clave == "tipo": return valor_en_json == "hostil"
+		#if clave == "dimension": return valor_en_json == "overworld"
+		#if clave == "clasificacion": return valor_en_json == "muerto_viviente"
+		#if clave == "habitat": return valor_en_json == "acuatico"
+	#else:
+		## Si el usuario dice NO, aceptamos cualquier cosa que NO sea el valor positivo
+		#if clave == "tipo": return valor_en_json != "hostil"
+		#if clave == "dimension": return valor_en_json != "overworld"
+		#if clave == "clasificacion": return valor_en_json != "muerto_viviente"
+		#if clave == "habitat": return valor_en_json != "acuatico"
 		
 	return valor_en_json == valor_usuario

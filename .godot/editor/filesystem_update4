@@ -1,1 +1,4 @@
 res://scenes/principal.tscn
+res://scripts/principal.gd
+res://assets/json/preguntas_data.json
+res://assets/json/mobs_data.json

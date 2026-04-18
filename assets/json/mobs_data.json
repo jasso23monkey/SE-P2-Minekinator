@@ -3,10 +3,10 @@
 	"id": "001",
 	"nombre": "Abeja",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "overworld",
+	  "neutral" : true,
+	  "overworld": true,
 	  "vuela": true,
-	  "clasificacion": "artropodo",
+	  "artropodo": true,
 	  "da_veneno": true,
 	  "produce_miel": true
 	}
@@ -15,10 +15,10 @@
 	"id": "002",
 	"nombre": "Ahogado",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "muerto_viviente",
-	  "habitat": "acuatico",
+	  "hostil" : true,
+	  "overworld": true,
+	  "muerto_viviente": true,
+	  "acuatico": true,
 	  "puede_tener_tridente": true
 	}
   },
@@ -26,11 +26,9 @@
 	"id": "003",
 	"nombre": "Ajolote",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "habitat": "acuatico",
-	  "anfibio": true,
-	  "depredador_de_peces": true,
+	  "pasivo" : true,
+	  "overworld": true,
+	  "acuatico": true,
 	  "se_transporta_en_cubeta": true
 	}
   },
@@ -38,33 +36,31 @@
 	"id": "004",
 	"nombre": "Aldeano",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "humanoide",
+	  "pasivo": true,
+	  "overworld": true,
 	  "puede_comerciar": true,
-	  "tiene_profesiones": true
+	  "tiene_profesiones": true,
+	  "version_zombie": true
 	}
   },
   {
 	"id": "005",
 	"nombre": "Aldeano Zombi",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "muerto_viviente",
+	  "hostil": true,
+	  "overworld": true,
+	  "muerto_viviente": true,
 	  "se_puede_curar": true,
 	  "se_quema_con_el_sol": true,
-	  "apariencia_humanoide": true
 	}
   },
   {
 	"id": "006",
 	"nombre": "Allay",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
+	  "pasivo":true,
+	  "overworld": true,
 	  "vuela": true,
-	  "clasificacion": "espiritu",
 	  "recolecta_items": true,
 	  "spawn_estructura": true
 	}
@@ -73,23 +69,20 @@
 	"id": "007",
 	"nombre": "Araña",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "overworld",
-	  "clasificacion": "artropodo",
+	  "neutral": true,
+	  "overworld": true,
+	  "artropodo": true,
 	  "escala_paredes": true,
-	  "tamaño": "grande",
-	  "da_veneno": false
 	}
   },
   {
 	"id": "008",
 	"nombre": "Araña de Cueva",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "overworld",
-	  "clasificacion": "artropodo",
+	  "neutral": true,
+	  "overworld": true,
+	  "artropodo": true,
 	  "escala_paredes": true,
-	  "tamaño": "pequeño",
 	  "da_veneno": true,
 	  "spawn_estructura": true
 	}
@@ -98,9 +91,9 @@
 	"id": "009",
 	"nombre": "Armadillo",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "bioma_especifico": "sabana",
+	  "pasivo": true,
+	  "overworld": true,
+	  "bioma_especifico": true,
 	  "se_hace_bolita": true,
 	  "suelta_escamas": true
 	}
@@ -109,21 +102,21 @@
 	"id": "010",
 	"nombre": "Bacalao",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
+	  "pasivo": true,
+	  "overworld": true,
+	  "acuatico": true,
 	  "es_comestible": true,
-	  "se_transporta_en_cubeta": true
+	  "se_transporta_en_cubeta": true,
+	  "suelta_pescado": true
 	}
   },
 {
 	"id": "011",
 	"nombre": "Blaze",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "nether",
+	  "hostil": true,
+	  "nether": true,
 	  "vuela": true,
-	  "clasificacion": "elemental",
 	  "lanza_proyectiles": true,
 	  "suelta_varas_fuego": true,
 	  "spawn_estructura": true
@@ -133,11 +126,9 @@
 	"id": "012",
 	"nombre": "Breeze",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
+	  "hostil": true,
+	  "overworld": true,
 	  "vuela": true,
-	  "clasificacion": "elemental",
-	  "habitat": "trial_chambers",
 	  "usa_ataques_viento": true,
 	  "spawn_estructura": true
 	}
@@ -146,22 +137,21 @@
 	"id": "013",
 	"nombre": "Burro",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "pasivo": true,
+	  "overworld": true,
 	  "es_montable": true,
 	  "puede_llevar_cofres": true,
-	  "orejas_largas": true
+	  "orejas_largas": true, 
+	  "es_tameable": true
 	}
   },
   {
 	"id": "014",
 	"nombre": "Bruja",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "humanoide",
-	  "lanza_pociones": true,
+	  "hostil": true,
+	  "overworld": true,
+	  "lanza_proyectiles": true,
 	  "usa_sombrero": true
 	}
   },
@@ -169,21 +159,21 @@
 	"id": "015",
 	"nombre": "Caballo",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "pasivo": true,
+	  "overworld": true,
 	  "es_montable": true,
 	  "puede_usar_armadura": true,
-	  "puede_llevar_cofres": false
+	  "es_tameable": true,
+	  "version_zombie": true
 	}
   },
   {
 	"id": "016",
 	"nombre": "Caballo Esqueleto",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "muerto_viviente",
+	  "pasivo": true,
+	  "overworld": true,
+	  "muerto_viviente": true,
 	  "es_montable": true,
 	  "hecho_de_huesos": true
 	}
@@ -192,20 +182,18 @@
 	"id": "017",
 	"nombre": "Caballo Zombi",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "muerto_viviente",
+	  "pasivo": true,
+	  "overworld": true,
+	  "muerto_viviente": true,
 	  "es_montable": true,
-	  "color_piel": "verde"
 	}
   },
   {
 	"id": "018",
 	"nombre": "Cabra",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "neutral": true,
+	  "overworld": true,
 	  "salta_alto": true,
 	  "da_embestidas": true,
 	  "suelta_cuernos": true
@@ -215,20 +203,19 @@
 	"id": "019",
 	"nombre": "Calamar",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
+	  "pasivo": true,
+	  "overworld": true,
+	  "acuatico": true,
 	  "suelta_tinta": true,
-	  "brilla": false
 	}
   },
   {
 	"id": "020",
 	"nombre": "Calamar Luminoso",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
+	  "pasivo": true,
+	  "overworld": true,
+	  "acuatico": true,
 	  "suelta_tinta": true,
 	  "brilla": true
 	}
@@ -237,34 +224,31 @@
 	"id": "021",
 	"nombre": "Camello",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "pasivo": true,
+	  "overworld": true,
+	  "mamifero": true,
 	  "es_montable": true,
 	  "pueden_montar_dos": true,
 	  "tiene_joroba": true,
-	  "es_disecado": false
 	}
   },
   {
 	"id": "022",
 	"nombre": "Camello disecado",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "pasivo": true,
+	  "overworld": true,
 	  "es_montable": true,
 	  "tiene_joroba": true,
-	  "es_disecado": true
+	  "muerto_viviente": true,
 	}
   },
   {
 	"id": "023",
 	"nombre": "Cerdo",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "pasivo": true,
+	  "overworld": true,
 	  "es_comestible": true,
 	  "es_montable": true,
 	  "necesita_zanahoria_en_palo": true
@@ -274,20 +258,21 @@
 	"id": "024",
 	"nombre": "Bogged (Ciénago)",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "muerto_viviente",
-	  "lanza_flechas_venenosas": true,
-	  "cubierto_de_musgo": true
+	  "hostil": true,
+	  "overworld": true,
+	  "muerto_viviente": true,
+	  "lanza_proyectiles": true,
+	  "cubierto_de_musgo": true,
+	  "da_veneno": true,
 	}
   },
   {
 	"id": "025",
 	"nombre": "Conejo",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "pasivo": true,
+	  "overworld": true,
+	  "mamifero": true,
 	  "salta": true,
 	  "suelta_pata": true
 	}
@@ -296,8 +281,8 @@
 	"id": "026",
 	"nombre": "Creeper",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
+	  "hostil": true,
+	  "overworld": true,
 	  "explota": true,
 	  "teme_a_los_gatos": true
 	}
@@ -306,9 +291,8 @@
 	"id": "027",
 	"nombre": "Creaking (Crepitante)",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "vegetal",
+	  "hostil": true,
+	  "overworld": true,
 	  "solo_se_mueve_si_no_lo_miras": true,
 	  "conectado_a_un_corazon": true
 	}
@@ -317,9 +301,8 @@
 	"id": "028",
 	"nombre": "Cubo de Magma",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "nether",
-	  "clasificacion": "slime",
+	  "hostil": true,
+	  "nether": true,
 	  "se_divide_al_morir": true,
 	  "resiste_el_fuego": true
 	}
@@ -328,9 +311,9 @@
 	"id": "029",
 	"nombre": "Delfín",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
+	  "neutral": true,
+	  "overworld": true,
+	  "acuatico": true,
 	  "da_efecto_velocidad": true,
 	  "salta_sobre_el_agua": true
 	}
@@ -339,9 +322,9 @@
 	"id": "030",
 	"nombre": "Devastador",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "maldeano",
+	  "hostil": true,
+	  "overworld": true,
+	  "maldeano": true,
 	  "es_una_bestia_grande": true,
 	  "da_embestidas": true
 	}
@@ -350,21 +333,22 @@
 	"id": "031",
 	"nombre": "Enderdragón",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "end",
+	  "hostil": true,
+	  "end": true,
 	  "vuela": true,
 	  "es_jefe": true,
-	  "lanza_bolas_acido": true
+	  "lanza_proyectiles": true,
+	  "tiene_mucha_vida": true,
 	}
   },
 {
 	"id": "032",
 	"nombre": "Enderman",
 	"reglas": {
-	  "tipo": "neutral",
-	  "puede_estar_en_overworld": true,
-	  "puede_estar_en_nether": true,
-	  "puede_estar_en_end": true,
+	  "neutral": true,
+	  "overworld": true,
+	  "nether": true,
+	  "end": true,
 	  "se_teletransporta": true,
 	  "teme_al_agua": true,
 	  "roba_bloques": true
@@ -374,21 +358,21 @@
 	"id": "033",
 	"nombre": "Endermite",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "end",
-	  "clasificacion": "artropodo",
+	  "hostil": true,
+	  "end": true,
+	  "artropodo": true,
 	  "aparece_con_enderpearls": true,
-	  "tamaño": "pequeño"
 	}
   },
   {
 	"id": "034",
 	"nombre": "Esqueleto",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "muerto_viviente",
-	  "usa_arco": true,
+	  "hostil": true,
+	  "overworld": true,
+	  "nether": true,
+	  "muerto_viviente": true,
+	  "lanza_proyectiles": true,
 	  "se_quema_con_el_sol": true
 	}
   },
@@ -396,10 +380,10 @@
 	"id": "035",
 	"nombre": "Stray (Esqueleto Glacial)",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "muerto_viviente",
-	  "bioma_especifico": "frio",
+	  "hostil": true,
+	  "overworld": true,
+	  "muerto_viviente": true,
+	  "bioma_especifico": true,
 	  "lanza_flechas_lentitud": true
 	}
   },
@@ -407,9 +391,9 @@
 	"id": "036",
 	"nombre": "Esqueleto Wither",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "nether",
-	  "clasificacion": "muerto_viviente",
+	  "hostil": true,
+	  "nether": true,
+	  "muerto_viviente": true,
 	  "da_efecto_wither": true,
 	  "usa_espada": true,
 	  "spawn_estructura": true
@@ -419,8 +403,8 @@
 	"id": "037",
 	"nombre": "Fantasma (Phantom)",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
+	  "hostil": true,
+	  "overworld": true,
 	  "vuela": true,
 	  "aparece_si_no_duermes": true,
 	  "se_quema_con_el_sol": true
@@ -430,11 +414,9 @@
 	"id": "038",
 	"nombre": "Gato",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "pasivo": true,
+	  "overworld": true,
 	  "ahuyenta_creepers": true,
-	  "cae_de_pie": true,
 	  "es_tameable": true
 	}
   },
@@ -442,19 +424,18 @@
 	"id": "039",
 	"nombre": "Ghast",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "nether",
+	  "hostil": true,
+	  "nether": true,
 	  "vuela": true,
-	  "lanza_bolas_fuego": true,
-	  "es_grande_y_blanco": true
+	  "lanza_proyectiles": true,
 	}
   },
   {
 	"id": "040",
 	"nombre": "Ghast Feliz",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
+	  "pasivo": true,
+	  "overworld": true,
 	  "vuela": true,
 	  "es_montable": true
 	}
@@ -463,9 +444,9 @@
 	"id": "041",
 	"nombre": "Gólem de Cobre",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "golem",
+	  "pasivo": true,
+	  "overworld": true,
+	  "golem": true,
 	  "hecho_por_el_jugador": true,
 	  "se_oxida": true,
 	  "ordena_cofres": true
@@ -475,9 +456,9 @@
 	"id": "042",
 	"nombre": "Gólem de Hierro",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "overworld",
-	  "clasificacion": "golem",
+	  "neutral": true,
+	  "overworld": true,
+	  "golem": true,
 	  "lanza_mobs_por_el_aire": true,
 	  "suelta_amapolas": true,
 	  "spawn_estructura": true
@@ -487,9 +468,9 @@
 	"id": "043",
 	"nombre": "Gólem de Nieve",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "golem",
+	  "pasivo": true,
+	  "overworld": true,
+	  "golem": true,
 	  "hecho_por_el_jugador": true,
 	  "suelta_nieve": true,
 	  "usa_calabaza": true
@@ -499,10 +480,9 @@
 	"id": "044",
 	"nombre": "Guardián",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
-	  "habitat": "monumento_oceanico",
+	  "hostil": true,
+	  "overworld": true,
+	  "acuatico": true,
 	  "dispara_laser": true,
 	  "tiene_espinas": true,
 	  "spawn_estructura": true
@@ -512,10 +492,9 @@
 	"id": "045",
 	"nombre": "Guardián Anciano",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
-	  "habitat": "monumento_oceanico",
+	  "hostil": true,
+	  "overworld": true,
+	  "acuatico": true,
 	  "dispara_laser": true,
 	  "tiene_espinas":true,
 	  "da_fatiga_minera": true,
@@ -526,22 +505,21 @@
 	"id": "046",
 	"nombre": "Hoglin",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "nether",
-	  "clasificacion": "mamifero",
+	  "hostil": true,
+	  "nether": true,
 	  "parece_un_cerdo_salvaje": true,
-	  "teme_a_los_hongos_deformados": true
+	  "teme_a_los_hongos_deformados": true,
+	  "version_zombie": true
 	}
   },
   {
 	"id": "047",
 	"nombre": "Evocador (Evoker)",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "maldeano",
+	  "hostil": true,
+	  "overworld": true,
+	  "maldeano": true,
 	  "invoca_vexes": true,
-	  "usa_colmillos_magicos": true,
 	  "suelta_totem": true
 	}
   },
@@ -549,32 +527,32 @@
 	"id": "048",
 	"nombre": "Spider Jockey",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
+	  "hostil": true,
+	  "overworld": true,
 	  "es_jinete": true,
-	  "montura": "araña",
-	  "jinete": "esqueleto"
+	  "montura_araña": true,
+	  "jinet_esqueleto": true
 	}
   },
   {
 	"id": "049",
 	"nombre": "Chicken Jockey",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
+	  "hostil": true,
+	  "overworld": true,
 	  "es_jinete": true,
-	  "montura": "pollo",
-	  "jinete": "zombi_bebe"
+	  "montura_pollo": true,
+	  "jinete_zombi": true
 	}
   },
   {
 	"id": "050",
 	"nombre": "Jinete Esqueleto",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
+	  "hostil": true,
+	  "overworld": true,
 	  "es_jinete": true,
-	  "montura": "caballo_esqueleto",
+	  "montura_caballo": true,
 	  "aparece_en_trampa_de_rayo": true
 	}
   },
@@ -582,8 +560,8 @@
 	"id": "051",
 	"nombre": "Lavagante (Strider)",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "nether",
+	  "pasivo": true,
+	  "nether": true,
 	  "es_montable": true,
 	  "camina_sobre_lava": true,
 	  "esta_feo": true
@@ -593,20 +571,18 @@
 	"id": "052",
 	"nombre": "Silverfish (Lepisma)",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "artropodo",
+	  "hostil": true,
+	  "overworld": true,
+	  "artropodo": true,
 	  "se_esconde_en_bloques": true,
-	  "tamaño": "muy_pequeño"
 	}
   },
   {
 	"id": "053",
 	"nombre": "Llama",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "neutral": true,
+	  "overworld": true,
 	  "escupe": true,
 	  "puede_llevar_cofres": true
 	}
@@ -615,9 +591,8 @@
 	"id": "054",
 	"nombre": "Lobo",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "neutral": true,
+	  "overworld": true,
 	  "es_tameable": true,
 	  "ataca_esqueletos": true,
 	  "se_domestica_con_huesos": true
@@ -627,8 +602,8 @@
 	"id": "055",
 	"nombre": "Loro",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
+	  "pasivo": true,
+	  "overworld": true,
 	  "vuela": true,
 	  "es_tameable": true,
 	  "imita_sonidos": true,
@@ -639,10 +614,11 @@
 	"id": "056",
 	"nombre": " Esqueleto Momificado",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "muerto_viviente",
-	  "bioma_especifico": "desierto",
+	  "hostil": true,
+	  "overworld": true,
+	  "muerto_viviente": true,
+	  "bioma_especifico": true,
+	  "lanza_proyectiles": true,
 	  "no_se_quema_con_el_sol": true,
 	  "da_hambre_al_atacar": true
 	}
@@ -651,10 +627,9 @@
 	"id": "057",
 	"nombre": "Mooshroom (Champiñaca)",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
-	  "bioma_especifico": "isla_setas",
+	  "pasivo": true,
+	  "overworld": true,
+	  "bioma_especifico": true,
 	  "tiene_hongos_en_el_lomo": true,
 	  "da_sopa_sospechosa": true
 	}
@@ -663,11 +638,11 @@
 	"id": "058",
 	"nombre": "Mula",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "pasivo": true,
+	  "overworld": true,
 	  "es_hibrido": true,
 	  "es_montable": true,
+	  "es_tameable": true,
 	  "puede_llevar_cofres": true
 	}
   },
@@ -675,10 +650,9 @@
 	"id": "059",
 	"nombre": "Murciélago",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
+	  "pasivo": true,
+	  "overworld": true,
 	  "vuela": true,
-	  "habitat": "cavernas",
 	  "es_decorativo": true
 	}
   },
@@ -686,22 +660,19 @@
 	"id": "060",
 	"nombre": "Ocelote",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
-	  "bioma_especifico": "jungla",
+	  "pasivo": true,
+	  "overworld": true,
+	  "bioma_especifico": true,
 	  "ahuyenta_creepers": true,
-	  "es_tameable": false
 	}
   },
   {
 	"id": "061",
 	"nombre": "Oso Polar",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
-	  "bioma_especifico": "frio",
+	  "neutral": true,
+	  "overworld": true,
+	  "bioma_especifico": true,
 	  "protege_a_sus_crias": true,
 	  "suelta_pescado": true
 	}
@@ -710,9 +681,8 @@
 	"id": "062",
 	"nombre": "Oveja",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "pasivo": true,
+	  "overworld": true,
 	  "da_lana": true,
 	  "se_puede_teñir": true,
 	  "come_pasto": true
@@ -722,20 +692,20 @@
 	"id": "063",
 	"nombre": "Pez Globo",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
+	  "neutral": true,
+	  "overworld": true,
+	  "acuatico": true,
 	  "se_infla": true,
-	  "da_veneno_al_tocar": true
+	  "da_veneno_al_atacar": true
 	}
   },
   {
 	"id": "064",
 	"nombre": "Pez Tropical",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
+	  "pasivo": true,
+	  "overworld": true,
+	  "acuatico": true,
 	  "tiene_muchas_variantes": true,
 	  "colores_llamativos": true
 	}
@@ -744,24 +714,20 @@
 	"id": "065",
 	"nombre": "Piglin",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "nether",
-	  "clasificacion": "humanoide",
+	  "neutral": true,
+	  "nether": true,
 	  "le_gusta_el_oro": true,
 	  "puede_comerciar": true,
-	  "se_transforma_en_el_overworld": true
+	  "version_zombie": true
 	}
   },
   {
 	"id": "066",
 	"nombre": "Piglin Bruto",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "nether",
-	  "clasificacion": "humanoide",
+	  "hostil": true,
+	  "nether": true,
 	  "usa_hacha": true,
-	  "no_se_distrae_con_oro": true,
-	  "tiene_mucha_vida": true,
 	  "spawn_estructura": true
 	}
   },
@@ -769,9 +735,9 @@
 	"id": "067",
 	"nombre": "Piglin Zombificado",
 	"reglas": {
-	  "tipo": "neutral",
-	  "dimension": "nether",
-	  "clasificacion": "muerto_viviente",
+	  "neutral": true,
+	  "nether": true,
+	  "muerto_viviente": true,
 	  "ataca_en_grupo": true,
 	  "usa_espada_oro": true
 	}
@@ -780,9 +746,8 @@
 	"id": "068",
 	"nombre": "Pollo",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "ave",
+	  "pasivo": true,
+	  "overworld": true,
 	  "pone_huevos": true,
 	  "suelta_plumas": true,
 	  "cae_lentamente": true
@@ -792,9 +757,8 @@
 	"id": "069",
 	"nombre": "Rana",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "anfibio": true,
+	  "pasivo": true,
+	  "overworld": true,
 	  "come_slimes_pequeños": true,
 	  "da_luces_de_rana": true
 	}
@@ -803,10 +767,8 @@
 	"id": "070",
 	"nombre": "Renacuajo",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
-	  "es_bebe": true,
+	  "pasivo": true,
+	  "overworld": true,
 	  "se_convierte_en_rana": true
 	}
   },
@@ -814,20 +776,19 @@
 	"id": "071",
 	"nombre": "Salmón",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
+	  "pasivo": true,
+	  "overworld": true,
+	  "acuatico": true,
 	  "es_comestible": true,
-	  "se_encuentra_en_rios": true
 	}
   },
 {
 	"id": "072",
 	"nombre": "Saqueador (Pillager)",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "maldeano",
+	  "hostil": true,
+	  "overworld": true,
+	  "maldeano": true,
 	  "usa_ballesta": true,
 	  "participa_en_raids": true
 	}
@@ -836,8 +797,8 @@
 	"id": "073",
 	"nombre": "Shulker",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "end",
+	  "hostil": true,
+	  "end": true,
 	  "se_esconde_en_caparazon": true,
 	  "dispara_proyectiles_levitacion": true,
 	  "se_teletransporta": true,
@@ -848,9 +809,9 @@
 	"id": "074",
 	"nombre": "Slime",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "slime",
+	  "hostil": true,
+	  "overworld": true,
+	  "slime": true,
 	  "se_divide_al_morir": true,
 	  "es_verde": true
 	}
@@ -859,20 +820,19 @@
 	"id": "075",
 	"nombre": "Sniffer",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "es_extinto_o_antiguo": true,
+	  "pasivo": true,
+	  "overworld": true,
+	  "es_antiguo": true,
 	  "olfatea_semillas": true,
-	  "es_muy_grande": true
 	}
   },
   {
 	"id": "076",
 	"nombre": "Tortuga",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "acuatico",
+	  "pasivo": true,
+	  "overworld": true,
+	  "acuatico": true,
 	  "pone_huevos_en_arena": true,
 	  "tiene_caparazon_duro": true
 	}
@@ -881,9 +841,8 @@
 	"id": "077",
 	"nombre": "Vaca",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "pasivo": true,
+	  "overworld": true,
 	  "da_leche": true,
 	  "da_cuero": true,
 	  "es_comestible": true
@@ -893,9 +852,8 @@
 	"id": "078",
 	"nombre": "Vendedor Ambulante",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "humanoide",
+	  "pasivo": true,
+	  "overworld": true,
 	  "aparece_con_llamas": true,
 	  "vende_items_raros": true,
 	  "se_hace_invisible_de_noche": true
@@ -905,8 +863,8 @@
 	"id": "079",
 	"nombre": "Vex",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
+	  "hostil": true,
+	  "overworld": true,
 	  "vuela": true,
 	  "atraviesa_paredes": true,
 	  "invocado_por_evocador": true,
@@ -917,12 +875,11 @@
 	"id": "080",
 	"nombre": "Warden",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
+	  "hostil": true,
+	  "overworld": true,
 	  "es_ciego": true,
 	  "detecta_vibraciones": true,
 	  "tiene_mucha_vida": true,
-	  "es_negro": true,
 	  "spawn_estructura": true
 	}
   },
@@ -930,11 +887,11 @@
 	"id": "081",
 	"nombre": "Wither",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "multiple",
+	  "hostil": true,
 	  "es_jefe": true,
 	  "tiene_tres_cabezas": true,
 	  "vuela": true,
+	  "tiene_mucha_vida": true,
 	  "invocado_por_jugador": true,
 	  "es_negro": true
 	}
@@ -943,10 +900,9 @@
 	"id": "082",
 	"nombre": "Zoglin",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "nether",
-	  "clasificacion": "muerto_viviente",
-	  "era_un_hoglin": true,
+	  "hostil": true,
+	  "nether": true,
+	  "muerto_viviente": true,
 	  "ataca_todo_lo_que_ve": true
 	}
   },
@@ -954,11 +910,10 @@
 	"id": "083",
 	"nombre": "Zombi",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "muerto_viviente",
+	  "hostil": true,
+	  "overworld": true,
+	  "muerto_viviente": true,
 	  "se_quema_con_el_sol": true,
-	  "se_puede_curar": false,
 	  "ataca_aldeanos": true
 	}
   },
@@ -966,13 +921,11 @@
 	"id": "084",
 	"nombre": "Husk (Zombi Desértico)",
 	"reglas": {
-	  "tipo": "hostil",
-	  "dimension": "overworld",
-	  "clasificacion": "muerto_viviente",
-	  "bioma_especifico": "desierto",
-	  "no_se_quema_con_el_sol": true,
+	  "hostil": true,
+	  "overworld": true,
+	  "muerto_viviente": true,
+	  "bioma_especifico": true,
 	  "da_efecto_hambre": true,
-	  "variante_de": "zombi"
 	}
   },
 
@@ -980,9 +933,8 @@
 	"id": "085",
 	"nombre": "Zorro",
 	"reglas": {
-	  "tipo": "pasivo",
-	  "dimension": "overworld",
-	  "clasificacion": "mamifero",
+	  "pasivo": true,
+	  "overworld": true,
 	  "duerme_de_dia": true,
 	  "salta_para_atacar": true,
 	  "lleva_items_en_la_boca": true
