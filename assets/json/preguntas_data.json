@@ -9,19 +9,27 @@
   },
 {
 	"clave": "pasivo",
-	"texto": "¿Es una criatura que nunca ataca?",
+	"texto": "¿Es una criatura que nunca ataca (pasivo)?",
   },
 {
 	"clave": "muerto_viviente",
 	"texto": "¿Es considerado un muerto viviente (zombie, esqueleto, etc.)?",
   },
  {
-	"clave": "artopodo",
+	"clave": "artropodo",
 	"texto": "¿Es un artópodo (araña, abeja, silverfish)?",
   },
 {
 	"clave": "acuatico",
 	"texto": "¿Su hábitat principal es el agua (es una criatura acuática)?",
+  },
+{
+	"clave": "maldeano",
+	"texto": "¿Este mobs es del equipo de los maldeanos?",
+  },
+{
+	"clave": "es_jinete",
+	"texto": "¿Este mob es un tipo de jinete?",
   },
   {
 	"clave": "vuela",
@@ -40,6 +48,10 @@
 	"clave": "end",
 	"texto": "¿Habita naturalmente en el End?",
   },
+{
+	"clave": "ataca_aldeanos",
+	"texto": "¿Este mob ataca a los aldeanos para convertirlos?",
+  },
   {
 	"clave": "es_jefe",
 	"texto": "¿Se trata de un jefe final (Boss) con una barra de vida grande?",
@@ -48,13 +60,102 @@
 	"clave": "se_quema_con_el_sol",
 	"texto": "¿Sufre daño o se quema cuando le da la luz directa del sol?",
   },
-  {
+{
 	"clave": "es_montable",
 	"texto": "¿Es una criatura en la que te puedes montar?",
+  },
+{
+	"clave": "olfatea_semillas",
+	"texto": "¿Es un mob que te puede dropear semillas antiguas?",
+  },
+{
+	"clave": "da_cuero",
+	"texto": "¿Es un mob que al matar te droppea cuero?",
+  },
+{
+	"clave": "pone_huevos_en_arena",
+	"texto": "¿Es un mob que pone sus huevos en arena?",
+  },
+{
+	"clave": "aparece_con_llamas",
+	"texto": "¿Cuando el mob hace spawn junto con llamas?",
+  },
+{
+	"clave": "tiene_caparazon",
+	"texto": "¿Este mob tiene caparazón?",
+  },
+{ 
+	"clave": "se_divide_al_morir",
+	"texto": "¿Este mob al matarlo se puede dividir?",
+  },
+{
+	"clave": "montura_araña",
+	"texto": "¿Este mob monta una araña?",
+  },
+{
+	"clave": "montura_pollo",
+	"texto": "¿Este mob monta un pollo?",
+  },
+{
+	"clave": "montura_caballo",
+	"texto": "¿Este mob monta un caballo esqueleto?",
+  },
+{
+	"clave": "jinete_zombie",
+	"texto": "¿Este mob tiene como jinete a un zombie?",
+  },
+{
+	"clave": "jinete_esqueleto",
+	"texto": "¿Este mob tiene como jinete a un esqueleto?",
+  },
+{
+	"clave": "pez_rojo",
+	"texto": "¿Este mob es un pez rojo?",
+  },
+{
+	"clave": "usa_ballesta",
+	"texto": "¿El arma de este mob es una ballesta?",
+  },
+  {
+	"clave": "tiene_espinas",
+	"texto": "¿Este mob tiene espinas en el cuerpo?",
+  },
+
+{
+	"clave": "cae_lentamente",
+	"texto": "¿Este mob cae lentamente?",
+  },
+{
+	"clave": "come_slimes",
+	"texto": "¿Este mob puede comer slimes?",
+  },
+{
+	"clave": "da_luces_de_rana",
+	"texto": "¿Este mob te puede dar luces de rana?",
+  },
+{
+	"clave": "se_convierte_en_rana",
+	"texto": "¿Este mob despues e convierte en rana?",
+  },
+{
+	"clave": "da_fatiga_minera",
+	"texto": "¿Este mob te puede dar fatiga minera?",
   },
   {
 	"clave": "es_tameable",
 	"texto": "¿Se puede domesticar para que sea tu mascota?",
+  },
+{
+	"clave": "es_decorativo",
+	"texto": "¿Este mob es solo de ambientación?",
+  },
+  {
+	"clave": "se_domestica_con_huesos",
+	"texto": "¿Se puede domesticar con huesos?",
+  },
+  {
+	"clave": "escupe",
+	"texto": "¿Este mob te puede escupir?",
   },
   {
 	"clave": "puede_comerciar",
@@ -64,6 +165,10 @@
 	"clave": "explota",
 	"texto": "¿Tiene la capacidad de explotar cerca del jugador?",
   },
+ {
+	"clave": "parece_arbol",
+	"texto": "¿Este mob esta hecho de corteza de árbol?",
+  },
   {
 	"clave": "se_teletransporta",
 	"texto": "¿Puede teletransportarse de un lugar a otro?",
@@ -71,6 +176,14 @@
   {
 	"clave": "da_veneno",
 	"texto": "¿Sus ataques pueden envenenar al jugador?",
+  },
+{
+	"clave": "parece_un_cerdo_salvaje",
+	"texto": "¿Este mob parece un cerdo salvaje?",
+  },
+  {
+	"clave": "version_zombie",
+	"texto": "¿Este mob tiene una version zombie?",
   },
   {
 	"clave": "lanza_proyectiles",
@@ -83,6 +196,10 @@
   {
 	"clave": "es_ciego",
 	"texto": "¿Es una criatura que no tiene visión y detecta vibraciones?",
+  },
+{
+	"clave": "suelta_totem",
+	"texto": "¿Este mob te puede soltar un totem de inmortalidad?",
   },
   {
 	"clave": "hecho_por_el_jugador",
@@ -104,10 +221,137 @@
 	"clave": "se_puede_curar",
 	"texto": "¿Se puede des-zombificar?",
   },
+{
+	"clave": "ataca_en_grupo",
+	"texto": "¿Este mob unicamente ataca en grupo?",
+  },
  {
 	"clave": "spawn_estructura",
 	"texto": "¿Su spawn es exclusivo a alguna estructura?",
   },
+{
+	"clave": "usa_hacha",
+	"texto": "¿El arma de este mob es un hacha?",
+  },
+ {
+	"clave": "se_hace_bolita",
+	"texto": "¿Este mob se esconde si lo atacas?",
+  },
+  {
+	"clave": "es_comestible",
+	"texto": "¿Este mob se puede comer?",
+  },
+ {
+	"clave": "da_lana",
+	"texto": "¿Este mob te puede dar lana?",
+  },
+  {
+	"clave": "se_transporta_en_cubeta",
+	"texto": "¿Este mob se puede transportar en una cubeta?",
+  },
+  {
+	"clave": "suelta_pescado",
+	"texto": "¿Cuando lo matas suelta pescado?",
+  },
+ { 
+	"clave": "puede_llevar_cofres",
+	"texto": "¿Este mob puede llevar cofres?",
+  },
+ { 
+	"clave": "orejas_largas",
+	"texto": "¿Este mob tiene orejas largas?",
+  },
+{ 
+	"clave": "es_hibrido",
+	"texto": "¿Este mob es la cruza de caballo y burro?",
+  },
+ { 
+	"clave": "hecho_de_huesos",
+	"texto": "¿Este mob es hecho de huesos?",
+  },
+{ 
+	"clave": "da_efecto_wither",
+	"texto": "¿Este mob te puede dar el efecto del wither?",
+  },
+ { 
+	"clave": "suelta_cuernos",
+	"texto": "¿Este mob te puede droppear cuernos?",
+  },
+{ 
+	"clave": "ahuyenta_creepers",
+	"texto": "¿Este mob puede ahuyentar creepers?",
+  },
+{ 
+	"clave": "suelta_tinta",
+	"texto": "¿Este mob te puede droppear tinta?",
+  },
+{ 
+	"clave": "brilla",
+	"texto": "¿Este mob brilla?",
+  },
+{ 
+	"clave": "pueden_montar_dos",
+	"texto": "¿Este mob puede ser montado por dos jugadores?",
+  },
+{ 
+	"clave": "version_feliz",
+	"texto": "¿Este mob tiene su versión feliz?",
+  },
+{ 
+	"clave": "hongo",
+	"texto": "¿Este mob tiene hongos en su cuerpo?",
+  },
 
-   
+{ 
+	"clave": "resiste_el_fuego",
+	"texto": "¿Este mob es resistente al fuego?",
+  },
+{ 
+	"clave": "da_efecto_velocidad",
+	"texto": "¿Este mob te puede dar velocidad acuática?",
+  },
+{ 
+	"clave": "da_embestidas",
+	"texto": "¿Este mob te puede embestir?",
+  },
+{ 
+	"clave": "se_oxida",
+	"texto": "¿Este mob se puede oxidar?",
+  },
+{ 
+	"clave": "ordena_cofres",
+	"texto": "¿Este mob puede ordenar cofres?",
+  },
+{ 
+	"clave": "golem",
+	"texto": "¿Este mob es un tipo de gólem?",
+  },
+{ 
+	"clave": "suelta_amapolas",
+	"texto": "¿Este mob cuando lo matas suelta amapolas?",
+  },
+{ 
+	"clave": "camina_sobre_lava",
+	"texto": "¿Este mob es capaz de caminar sobre lava?",
+  },
+{ 
+	"clave": "se_quema_con_el_sol",
+	"texto": "¿Este mob se quema con el sol?",
+  },
+{ 
+	"clave": "da_efecto_hambre",
+	"texto": "¿Este mob te puede dar hambre si lo atacas?",
+  },
+{ 
+	"clave": "se_esconde_en_bloques",
+	"texto": "¿Este mob es capaz de esconderse en bloques?",
+  },
+{ 
+	"clave": "dispara_proyectiles_levitacion",
+	"texto": "¿Este mob si te ataca te hace levitar?",
+  },
+{ 
+	"clave": "lleva_items_en_la_boca",
+	"texto": "¿Este mob puede llevar items en la boca?",
+  },
 ]

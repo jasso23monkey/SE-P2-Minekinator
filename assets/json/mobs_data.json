@@ -29,7 +29,8 @@
 	  "pasivo" : true,
 	  "overworld": true,
 	  "acuatico": true,
-	  "se_transporta_en_cubeta": true
+	  "se_transporta_en_cubeta": true,
+	  "bioma_especifico": true
 	}
   },
   {
@@ -129,7 +130,7 @@
 	  "hostil": true,
 	  "overworld": true,
 	  "vuela": true,
-	  "usa_ataques_viento": true,
+	  "lanza_proyectiles": true,
 	  "spawn_estructura": true
 	}
   },
@@ -152,7 +153,8 @@
 	  "hostil": true,
 	  "overworld": true,
 	  "lanza_proyectiles": true,
-	  "usa_sombrero": true
+	  "usa_sombrero": true,
+	  "da_veneno": true
 	}
   },
   {
@@ -186,6 +188,7 @@
 	  "overworld": true,
 	  "muerto_viviente": true,
 	  "es_montable": true,
+	  "se_quema_con_el_sol": true,
 	}
   },
   {
@@ -196,7 +199,8 @@
 	  "overworld": true,
 	  "salta_alto": true,
 	  "da_embestidas": true,
-	  "suelta_cuernos": true
+	  "suelta_cuernos": true,
+	  "bioma_especifico": true
 	}
   },
   {
@@ -228,8 +232,10 @@
 	  "overworld": true,
 	  "mamifero": true,
 	  "es_montable": true,
+	  "es_tameable": true,
 	  "pueden_montar_dos": true,
 	  "tiene_joroba": true,
+	  "bioma_especifico": true
 	}
   },
   {
@@ -241,6 +247,8 @@
 	  "es_montable": true,
 	  "tiene_joroba": true,
 	  "muerto_viviente": true,
+	  "pueden_montar_dos": true,
+	  "bioma_especifico": true
 	}
   },
   {
@@ -262,8 +270,10 @@
 	  "overworld": true,
 	  "muerto_viviente": true,
 	  "lanza_proyectiles": true,
-	  "cubierto_de_musgo": true,
+	  "hongo": true,
 	  "da_veneno": true,
+	  "hecho_de_huesos": true,
+	  "se_quema_con_el_sol": true,
 	}
   },
   {
@@ -274,7 +284,9 @@
 	  "overworld": true,
 	  "mamifero": true,
 	  "salta": true,
-	  "suelta_pata": true
+	  "suelta_pata": true,
+	  "orejas_largas": true,
+	  "es_comestible": true
 	}
   },
   {
@@ -293,8 +305,7 @@
 	"reglas": {
 	  "hostil": true,
 	  "overworld": true,
-	  "solo_se_mueve_si_no_lo_miras": true,
-	  "conectado_a_un_corazon": true
+	  "parece_arbol":true
 	}
   },
   {
@@ -315,7 +326,6 @@
 	  "overworld": true,
 	  "acuatico": true,
 	  "da_efecto_velocidad": true,
-	  "salta_sobre_el_agua": true
 	}
   },
   {
@@ -373,6 +383,7 @@
 	  "nether": true,
 	  "muerto_viviente": true,
 	  "lanza_proyectiles": true,
+	  "hecho_de_huesos": true,
 	  "se_quema_con_el_sol": true
 	}
   },
@@ -384,7 +395,8 @@
 	  "overworld": true,
 	  "muerto_viviente": true,
 	  "bioma_especifico": true,
-	  "lanza_flechas_lentitud": true
+	  "lanza_proyectiles": true,
+	  "se_quema_con_el_sol": true
 	}
   },
   {
@@ -395,7 +407,6 @@
 	  "nether": true,
 	  "muerto_viviente": true,
 	  "da_efecto_wither": true,
-	  "usa_espada": true,
 	  "spawn_estructura": true
 	}
   },
@@ -428,6 +439,7 @@
 	  "nether": true,
 	  "vuela": true,
 	  "lanza_proyectiles": true,
+	  "version_feliz": true
 	}
   },
   {
@@ -459,7 +471,7 @@
 	  "neutral": true,
 	  "overworld": true,
 	  "golem": true,
-	  "lanza_mobs_por_el_aire": true,
+	  "hecho_por_el_jugador": true,
 	  "suelta_amapolas": true,
 	  "spawn_estructura": true
 	}
@@ -472,8 +484,7 @@
 	  "overworld": true,
 	  "golem": true,
 	  "hecho_por_el_jugador": true,
-	  "suelta_nieve": true,
-	  "usa_calabaza": true
+	  "lanza_proyectiles": true
 	}
   },
   {
@@ -483,7 +494,6 @@
 	  "hostil": true,
 	  "overworld": true,
 	  "acuatico": true,
-	  "dispara_laser": true,
 	  "tiene_espinas": true,
 	  "spawn_estructura": true
 	}
@@ -495,7 +505,6 @@
 	  "hostil": true,
 	  "overworld": true,
 	  "acuatico": true,
-	  "dispara_laser": true,
 	  "tiene_espinas":true,
 	  "da_fatiga_minera": true,
 	  "spawn_estructura": true
@@ -508,7 +517,6 @@
 	  "hostil": true,
 	  "nether": true,
 	  "parece_un_cerdo_salvaje": true,
-	  "teme_a_los_hongos_deformados": true,
 	  "version_zombie": true
 	}
   },
@@ -519,7 +527,6 @@
 	  "hostil": true,
 	  "overworld": true,
 	  "maldeano": true,
-	  "invoca_vexes": true,
 	  "suelta_totem": true
 	}
   },
@@ -531,7 +538,7 @@
 	  "overworld": true,
 	  "es_jinete": true,
 	  "montura_araña": true,
-	  "jinet_esqueleto": true
+	  "jinete_esqueleto": true
 	}
   },
   {
@@ -553,7 +560,7 @@
 	  "overworld": true,
 	  "es_jinete": true,
 	  "montura_caballo": true,
-	  "aparece_en_trampa_de_rayo": true
+	  "jinete_esqueleto": true
 	}
   },
   {
@@ -564,7 +571,7 @@
 	  "nether": true,
 	  "es_montable": true,
 	  "camina_sobre_lava": true,
-	  "esta_feo": true
+	  "resiste_el_fuego": true
 	}
   },
 {
@@ -594,7 +601,6 @@
 	  "neutral": true,
 	  "overworld": true,
 	  "es_tameable": true,
-	  "ataca_esqueletos": true,
 	  "se_domestica_con_huesos": true
 	}
   },
@@ -619,8 +625,7 @@
 	  "muerto_viviente": true,
 	  "bioma_especifico": true,
 	  "lanza_proyectiles": true,
-	  "no_se_quema_con_el_sol": true,
-	  "da_hambre_al_atacar": true
+	  "da_efecto_hambre": true
 	}
   },
   {
@@ -629,9 +634,9 @@
 	"reglas": {
 	  "pasivo": true,
 	  "overworld": true,
+	  "es_comestible": true,
 	  "bioma_especifico": true,
-	  "tiene_hongos_en_el_lomo": true,
-	  "da_sopa_sospechosa": true
+	  "hongos": true,
 	}
   },
   {
@@ -643,6 +648,7 @@
 	  "es_hibrido": true,
 	  "es_montable": true,
 	  "es_tameable": true,
+	  "orejas_largas":true,
 	  "puede_llevar_cofres": true
 	}
   },
@@ -684,8 +690,8 @@
 	  "pasivo": true,
 	  "overworld": true,
 	  "da_lana": true,
+	  "es_comestible": true,
 	  "se_puede_teñir": true,
-	  "come_pasto": true
 	}
   },
   {
@@ -695,8 +701,9 @@
 	  "neutral": true,
 	  "overworld": true,
 	  "acuatico": true,
-	  "se_infla": true,
-	  "da_veneno_al_atacar": true
+	  "da_veneno": true,
+	  "tiene_espinas": true,
+	  "suelta_pescado": true
 	}
   },
   {
@@ -706,8 +713,9 @@
 	  "pasivo": true,
 	  "overworld": true,
 	  "acuatico": true,
-	  "tiene_muchas_variantes": true,
-	  "colores_llamativos": true
+	  "es_comestible": true,
+	  "es_decorativo": true,
+	  "se_transporta_en_cubeta": true
 	}
   },
   {
@@ -717,6 +725,7 @@
 	  "neutral": true,
 	  "nether": true,
 	  "le_gusta_el_oro": true,
+	  "usa_ballesta": true,
 	  "puede_comerciar": true,
 	  "version_zombie": true
 	}
@@ -739,7 +748,6 @@
 	  "nether": true,
 	  "muerto_viviente": true,
 	  "ataca_en_grupo": true,
-	  "usa_espada_oro": true
 	}
   },
   {
@@ -748,8 +756,7 @@
 	"reglas": {
 	  "pasivo": true,
 	  "overworld": true,
-	  "pone_huevos": true,
-	  "suelta_plumas": true,
+	  "es_comestible": true,
 	  "cae_lentamente": true
 	}
   },
@@ -759,7 +766,7 @@
 	"reglas": {
 	  "pasivo": true,
 	  "overworld": true,
-	  "come_slimes_pequeños": true,
+	  "come_slimes": true,
 	  "da_luces_de_rana": true
 	}
   },
@@ -768,8 +775,10 @@
 	"nombre": "Renacuajo",
 	"reglas": {
 	  "pasivo": true,
+	  "acuatico": true,
 	  "overworld": true,
-	  "se_convierte_en_rana": true
+	  "se_convierte_en_rana": true,
+	  "se_transporta_en_cubeta": true
 	}
   },
   {
@@ -780,6 +789,9 @@
 	  "overworld": true,
 	  "acuatico": true,
 	  "es_comestible": true,
+	  "suelta_pescado": true,
+	  "se_transporta_en_cubeta": true,
+	  "pez_rojo": true
 	}
   },
 {
@@ -799,7 +811,7 @@
 	"reglas": {
 	  "hostil": true,
 	  "end": true,
-	  "se_esconde_en_caparazon": true,
+	  "se_hace_bolita": true,
 	  "dispara_proyectiles_levitacion": true,
 	  "se_teletransporta": true,
 	  "spawn_estructura": true
@@ -834,7 +846,7 @@
 	  "overworld": true,
 	  "acuatico": true,
 	  "pone_huevos_en_arena": true,
-	  "tiene_caparazon_duro": true
+	  "tiene_caparazon": true
 	}
   },
   {
@@ -843,7 +855,6 @@
 	"reglas": {
 	  "pasivo": true,
 	  "overworld": true,
-	  "da_leche": true,
 	  "da_cuero": true,
 	  "es_comestible": true
 	}
@@ -855,8 +866,7 @@
 	  "pasivo": true,
 	  "overworld": true,
 	  "aparece_con_llamas": true,
-	  "vende_items_raros": true,
-	  "se_hace_invisible_de_noche": true
+	  "puede_comerciar": true,
 	}
   },
   {
@@ -903,6 +913,7 @@
 	  "hostil": true,
 	  "nether": true,
 	  "muerto_viviente": true,
+	  "parece_un_cerdo_salvaje": true,
 	  "ataca_todo_lo_que_ve": true
 	}
   },
@@ -935,8 +946,8 @@
 	"reglas": {
 	  "pasivo": true,
 	  "overworld": true,
-	  "duerme_de_dia": true,
-	  "salta_para_atacar": true,
+	  "bioma_especifico": true,
+	  "es_decorativo": true,
 	  "lleva_items_en_la_boca": true
 	}
   }
