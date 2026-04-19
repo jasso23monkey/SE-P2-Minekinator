@@ -7,6 +7,14 @@ const MOBS_POR_PAGINA = 5
 var total_preguntas_hechas = 1 # Empezamos en la pregunta 1
 var lista_preguntas = [] #variables para el gestor de estados
 var pregunta_actual_idx = 0
+var preguntas_pendientes = [] # Mazo de preguntas que aún no se han hecho
+var pregunta_actual_data = {}  # Datos de la pregunta que está en pantalla
+var reglas_exclusion = {
+	"hostil": ["pasivo", "neutral"],
+	"pasivo": ["hostil", "neutral"],
+	"neutral": ["hostil", "pasivo"]
+	# Quitamos las dimensiones de aquí para evitar el error del Enderman
+}
 
 
 # Ajusta estas rutas a tus nodos
@@ -43,25 +51,40 @@ func cargar_preguntas_json():
 		var datos = JSON.parse_string(archivo.get_as_text())
 		if datos:
 			lista_preguntas = datos
-			print("Preguntas cargadas: ", lista_preguntas.size())
+			# Creamos el mazo de pendientes y lo barajamos
+			preguntas_pendientes = lista_preguntas.duplicate()
+			preguntas_pendientes.shuffle() 
+			print("Mazo de preguntas barajado: ", preguntas_pendientes.size())
 
 func mostrar_pregunta_actual():
-	if pregunta_actual_idx < lista_preguntas.size():
-		var pregunta = lista_preguntas[pregunta_actual_idx]
-		label_pregunta.text = pregunta["texto"]
+	if preguntas_pendientes.size() > 0:
+		# Sacamos la primera del mazo barajado
+		pregunta_actual_data = preguntas_pendientes.pop_front()
+		label_pregunta.text = pregunta_actual_data["texto"]
 	else:
-		# Si llegamos aquí y hay más de 1 mob, el sistema no fue suficiente
 		verificar_resultado_final()
-# Esta función centraliza el progreso del juego
+
 func avanzar_a_siguiente_pregunta():
-	pregunta_actual_idx += 1
-	
-	# Verificar si ya solo queda uno antes de preguntar más
 	if mobs_restantes.size() <= 1:
 		verificar_resultado_final()
+		return
+
+	# Intentar encontrar una pregunta que separe a los mobs que quedan
+	var pregunta_inteligente = buscar_pregunta_discriminatoria()
+	
+	if not pregunta_inteligente.is_empty():
+		pregunta_actual_data = pregunta_inteligente
+		registrar_nueva_pregunta()
+		label_pregunta.text = pregunta_actual_data["texto"]
+		print("Inferencia: Pregunta seleccionada para diferenciar mobs restantes: ", pregunta_actual_data["clave"])
 	else:
-		registrar_nueva_pregunta() # La función que ya tenías para el label "Pregunta X"
-		mostrar_pregunta_actual()
+		# Si no hay una pregunta específica (o falló el buscador), usamos el azar
+		if preguntas_pendientes.size() > 0:
+			pregunta_actual_data = preguntas_pendientes.pop_front()
+			registrar_nueva_pregunta()
+			label_pregunta.text = pregunta_actual_data["texto"]
+		else:
+			verificar_resultado_final()
 
 func verificar_resultado_final():
 	if mobs_restantes.size() == 1:
@@ -166,31 +189,20 @@ func _on_si_pressed() -> void:
 # --- MOTOR DE INFERENCIA (Forward Chaining) ---
 
 func procesar_respuesta(valor_usuario: bool):
-	if pregunta_actual_idx >= lista_preguntas.size():
-		return
-
-	# 1. Obtener la clave de la regla actual (ej: "vuela", "tipo")
-	var pregunta_info = lista_preguntas[pregunta_actual_idx]
-	var clave_regla = pregunta_info["clave"]
+	var clave_regla = pregunta_actual_data["clave"]
 	
-	print("Procesando regla: ", clave_regla, " con valor: ", valor_usuario)
+	# --- NUEVA LÓGICA DE INFERENCIA ---
+	if valor_usuario == true:
+		podar_preguntas_incompatibles(clave_regla)
+	# ----------------------------------
 
-	# 2. Filtrado Lógico (Encadenamiento)
 	var nueva_lista = []
-	
 	for mob in mobs_restantes:
-		var reglas_mob = mob["reglas"]
-		
-		# Verificamos si el mob cumple con la condición
-		if cumple_regla(reglas_mob, clave_regla, valor_usuario):
+		if cumple_regla(mob["reglas"], clave_regla, valor_usuario):
 			nueva_lista.append(mob)
 	
-	# 3. Actualizar la base de hechos actual
 	mobs_restantes = nueva_lista
-	print("Después de filtrar '", clave_regla, "', quedan: ", mobs_restantes.size(), " mobs.")
 	actualizar_carrusel()
-	
-	# 4. Decidir el siguiente estado
 	avanzar_a_siguiente_pregunta()
 
 # Función auxiliar para manejar comparaciones especiales (como "tipo" o "dimension")
@@ -220,3 +232,53 @@ func cumple_regla(reglas_mob, clave, valor_usuario) -> bool:
 		#if clave == "habitat": return valor_en_json != "acuatico"
 		
 	return valor_en_json == valor_usuario
+	
+func podar_preguntas_incompatibles(clave_confirmada: String):
+	if reglas_exclusion.has(clave_confirmada):
+		var claves_a_eliminar = reglas_exclusion[clave_confirmada]
+		
+		# Filtramos el mazo para quitar las preguntas cuyas claves ya deducimos
+		var nuevas_pendientes = []
+		for p in preguntas_pendientes:
+			if not p["clave"] in claves_a_eliminar:
+				nuevas_pendientes.append(p)
+			else:
+				print("Inferencia: Eliminando pregunta redundante de ", p["clave"])
+		
+		preguntas_pendientes = nuevas_pendientes
+
+func buscar_pregunta_discriminatoria() -> Dictionary:
+	if mobs_restantes.size() < 2:
+		return {}
+
+	# 1. Mapear qué reglas tienen los mobs actuales
+	var frecuencias = {} # Clave: nombre_regla, Valor: cuantas veces es 'true'
+	
+	for mob in mobs_restantes:
+		for regla in mob["reglas"]:
+			if mob["reglas"][regla] == true:
+				frecuencias[regla] = frecuencias.get(regla, 0) + 1
+
+	# 2. Buscar la regla que mejor divida al grupo
+	# Lo ideal es una regla que tenga cerca de la mitad de los mobs (50%)
+	# Pero en grupos pequeños, cualquier regla que no tengan TODOS y que no tenga NADIE sirve.
+	var mejor_clave = ""
+	var menor_distancia_al_centro = 999
+	
+	for clave in frecuencias:
+		var n = frecuencias[clave]
+		# Si todos los mobs la tienen o ninguno, no nos sirve para diferenciar
+		if n > 0 and n < mobs_restantes.size():
+			# Calculamos qué tan cerca está de dividir el grupo a la mitad
+			var distancia = abs((mobs_restantes.size() / 2.0) - n)
+			if distancia < menor_distancia_al_centro:
+				menor_distancia_al_centro = distancia
+				mejor_clave = clave
+
+	# 3. Buscar esa clave en nuestro mazo de preguntas pendientes
+	if mejor_clave != "":
+		for i in range(preguntas_pendientes.size()):
+			if preguntas_pendientes[i]["clave"] == mejor_clave:
+				return preguntas_pendientes.pop_at(i) # La sacamos y la devolvemos
+	
+	return {}

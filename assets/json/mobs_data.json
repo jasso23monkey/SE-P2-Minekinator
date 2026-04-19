@@ -41,6 +41,7 @@
 	  "overworld": true,
 	  "puede_comerciar": true,
 	  "tiene_profesiones": true,
+	  "spawn_estructura": true,
 	  "version_zombie": true
 	}
   },
