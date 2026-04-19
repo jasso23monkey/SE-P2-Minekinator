@@ -251,13 +251,25 @@ func buscar_pregunta_discriminatoria() -> Dictionary:
 	if mobs_restantes.size() < 2:
 		return {}
 
-	# 1. Mapear qué reglas tienen los mobs actuales
-	var frecuencias = {} # Clave: nombre_regla, Valor: cuantas veces es 'true'
-	
+	var frecuencias = {}
 	for mob in mobs_restantes:
 		for regla in mob["reglas"]:
 			if mob["reglas"][regla] == true:
 				frecuencias[regla] = frecuencias.get(regla, 0) + 1
+
+	# --- AQUÍ ESTÁ EL CAMBIO ---
+	# 1. Limpiar preguntas que no dividen el grupo (Nadie las tiene o Todos las tienen)
+	var claves_a_eliminar = []
+	for i in range(preguntas_pendientes.size() - 1, -1, -1):
+		var clave = preguntas_pendientes[i]["clave"]
+		var n = frecuencias.get(clave, 0)
+		
+		# Si n es 0 (nadie la tiene) o n es igual al total (todos la tienen)
+		# la pregunta ya no sirve para diferenciar.
+		if n == 0 or n == mobs_restantes.size():
+			preguntas_pendientes.remove_at(i)
+			print("Limpieza: Eliminando pregunta irrelevante: ", clave)
+	# ---------------------------
 
 	# 2. Buscar la regla que mejor divida al grupo
 	# Lo ideal es una regla que tenga cerca de la mitad de los mobs (50%)

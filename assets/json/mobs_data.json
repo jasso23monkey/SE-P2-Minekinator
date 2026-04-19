@@ -614,6 +614,7 @@
 	  "vuela": true,
 	  "es_tameable": true,
 	  "imita_sonidos": true,
+	  "bioma_especifico": true,
 	  "se_sienta_en_el_hombro": true
 	}
   },
@@ -727,6 +728,7 @@
 	  "nether": true,
 	  "le_gusta_el_oro": true,
 	  "usa_ballesta": true,
+	  "lanza_proyectiles": true,
 	  "puede_comerciar": true,
 	  "version_zombie": true
 	}
@@ -803,6 +805,7 @@
 	  "overworld": true,
 	  "maldeano": true,
 	  "usa_ballesta": true,
+	  "lanza_proyectiles": true,
 	  "participa_en_raids": true
 	}
   },
@@ -813,7 +816,7 @@
 	  "hostil": true,
 	  "end": true,
 	  "se_hace_bolita": true,
-	  "dispara_proyectiles_levitacion": true,
+	  "lanza_proyectiles": true,
 	  "se_teletransporta": true,
 	  "spawn_estructura": true
 	}
@@ -902,6 +905,7 @@
 	  "es_jefe": true,
 	  "tiene_tres_cabezas": true,
 	  "vuela": true,
+	  "lanza_proyectiles": true,
 	  "tiene_mucha_vida": true,
 	  "invocado_por_jugador": true,
 	  "es_negro": true
